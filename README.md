@@ -8,7 +8,7 @@ Minimal compatibility smoke test for the Mesos 0.20.1 JNI bindings.
 - A Java JDK (1.5 or better)
 - Maven
 
-## Usaage
+## Usage
 
 Locate the Mesos master statically
 
