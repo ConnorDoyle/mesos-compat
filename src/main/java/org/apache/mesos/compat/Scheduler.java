@@ -73,6 +73,7 @@ public class Scheduler implements org.apache.mesos.Scheduler {
   TaskInfo taskInfo(Offer offer) {
     return TaskInfo.newBuilder()
       .setTaskId(taskIds.next())
+      .setName("mesos-compat-task")
       .setSlaveId(offer.getSlaveId())
       .setCommand(CommandInfo.newBuilder().setValue("echo mesos-compat"))
       .addResources(scalarResource("cpus", 0.01))
