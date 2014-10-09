@@ -78,7 +78,6 @@ public class Scheduler implements org.apache.mesos.Scheduler {
       .setCommand(CommandInfo.newBuilder().setValue("echo mesos-compat"))
       .addResources(scalarResource("cpus", 0.01))
       .addResources(scalarResource("mem", 8))
-      .addResources(scalarResource("disk", 0))
       .build();
   }
 
